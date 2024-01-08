@@ -1,10 +1,11 @@
 # Dot
 
-![logo](./logo.png)
+![logo](./assets/s_logo.png)
 
-Dot is a Controller, Navigator, and Selector.
+**Dot** is a Controller, Navigator, and Selector.
 
 > Use "Dot" to execute your action.
+
 
 # Class
 
