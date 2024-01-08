@@ -58,8 +58,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        backgroundColor: Colors.teal,
+        title: Text(widget.title, style: const TextStyle(color: Colors.white)),
       ),
       body: Stack(
         children: [
@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 const Text(
-                  'You have pushed the button this many times:',
+                  'Counter',
                 ),
                 Text(
                   '$_counter',
