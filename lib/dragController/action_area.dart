@@ -7,14 +7,14 @@ class ActionArea extends StatefulWidget {
     required this.icon,
     required this.position,
     required this.onAccept,
-    this.color = Colors.amber,
+    this.backgroundColor = Colors.amber,
     this.borderColor = Colors.black,
   });
 
   final double diameter;
   final ({double x, double y}) position;
   final Icon? icon;
-  final Color color;
+  final Color backgroundColor;
   final Color borderColor;
 
   final void Function() onAccept;
@@ -66,7 +66,7 @@ class _ActionAreaState extends State<ActionArea> {
                   width: diameter,
                   height: diameter,
                   decoration: BoxDecoration(
-                    color: widget.color,
+                    color: widget.backgroundColor,
                     shape: BoxShape.circle,
                     border: Border.fromBorderSide(
                       BorderSide(

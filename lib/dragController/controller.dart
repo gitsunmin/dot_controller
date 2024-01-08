@@ -13,12 +13,17 @@ class ActionProp {
     required this.onAccept,
     this.onLeave,
     this.onWillAccept,
+    this.backgroundColor = Colors.white,
+    this.borderColor = Colors.black,
   });
 
   final Icon icon;
   final void Function() onAccept;
   final void Function(Object?)? onLeave;
   final bool Function(Object?)? onWillAccept;
+
+  final Color backgroundColor;
+  final Color borderColor;
 }
 
 class DragController extends StatefulWidget {
@@ -109,8 +114,8 @@ class _DragControllerState extends State<DragController> {
                 (index, button) => MapEntry(
                   index,
                   ActionArea(
-                    color: Theme.of(context).colorScheme.secondary,
-                    borderColor: Theme.of(context).colorScheme.onSecondary,
+                    backgroundColor: button.backgroundColor,
+                    borderColor: button.borderColor,
                     onAccept: () => _onAccept(button),
                     diameter: diameter,
                     icon: button.icon,
