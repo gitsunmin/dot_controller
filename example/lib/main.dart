@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:dot/dot.dart';
-import 'package:dot/dragController/controller.dart';
+import 'package:dot_controller/dot_controller.dart';
 
 void main() {
   runApp(const MyApp());
@@ -77,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           ),
-          Dot(
+          DotController(
             draggingBackgroundColor: Colors.amber,
             stickBackgroundColor: Colors.amber,
             actions: [

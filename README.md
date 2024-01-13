@@ -1,10 +1,10 @@
-# Dot
+# dot_controller
 
 ![logo](./assets/s_logo.png)
 
-**Dot** is a Controller, Navigator, and Selector.
+**dot_controller** is a Controller, Navigator, and Selector.
 
-> Use "Dot" to execute your action.
+> Use "dot_controller" to execute your action.
 
 # Usage
 
@@ -33,7 +33,7 @@
               ],
             ),
           ),
-          Dot(
+          DotController(
             draggingBackgroundColor: Colors.amber,
             stickBackgroundColor: Colors.amber,
             actions: [

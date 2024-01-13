@@ -1,12 +1,19 @@
+import 'package:flutter/material.dart';
+import 'package:dot_controller/dot_controller.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:dot/dot.dart';
 
 void main() {
   test('adds one to input values', () {
-    // final calculator = Calculator();
-    // expect(calculator.addOne(2), 3);
-    // expect(calculator.addOne(-7), -6);
-    // expect(calculator.addOne(0), 1);
+    final dragController = DotController(
+      actions: [
+        ActionProp(
+          icon: const Icon(Icons.remove),
+          backgroundColor: Colors.red,
+          borderColor: Colors.black,
+          onAccept: () {},
+        ),
+      ],
+    );
+    expect(dragController.actions.length, 1);
   });
 }

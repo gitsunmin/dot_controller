@@ -1,11 +1,7 @@
-import 'package:dot/dragController/action_area.dart';
-import 'package:dot/dragController/stick.dart';
-import 'package:dot/utils/math.dart';
+import 'package:dot_controller/components/action_area.dart';
+import 'package:dot_controller/components/stick.dart';
+import 'package:dot_controller/utils/math.dart';
 import 'package:flutter/material.dart';
-// import './utils/math.dart';
-// import './components/dragController/action_area.dart';
-// import './components/dragController/stick.dart';
-// import 'package:code_flashcard/helpers/logger.helper.dart';
 
 class ActionProp {
   ActionProp({
@@ -26,8 +22,8 @@ class ActionProp {
   final Color borderColor;
 }
 
-class DragController extends StatefulWidget {
-  const DragController({
+class DotController extends StatefulWidget {
+  const DotController({
     super.key,
     required this.actions,
     this.stickBackgroundColor,
@@ -40,10 +36,10 @@ class DragController extends StatefulWidget {
   final List<ActionProp> actions;
 
   @override
-  State<DragController> createState() => _DragControllerState();
+  State<DotController> createState() => _DotControllerState();
 }
 
-class _DragControllerState extends State<DragController> {
+class _DotControllerState extends State<DotController> {
   bool isDragging = false;
 
   ({double x, double y}) _positioner(
@@ -137,7 +133,7 @@ class _DragControllerState extends State<DragController> {
           child: Stack(
             children: [
               Draggable(
-                data: 'DragController',
+                data: 'DotController',
                 onDragStarted: _onDragStarted,
                 onDraggableCanceled: _onDraggableCanceled,
                 feedback: Stick(
