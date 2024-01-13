@@ -1,8 +1,8 @@
 name: dot_controller
 description: "Drag-controlled Dot"
-version: 0.0.1
+version: 0.0.2
 homepage: "https://gitsunmin.github.io/"
-repository: "https://github.com/gitsunmin/dot"
+repository: "https://github.com/gitsunmin/dot_controller.git"
 
 environment:
   sdk: '>=3.2.3 <4.0.0'
