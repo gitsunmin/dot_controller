@@ -1,12 +1,12 @@
 name: dot_controller
-description: "You can run a function by simply moving Dot. You can also change the color and icon of Dot."
-version: 0.0.2
-homepage: "https://gitsunmin.github.io/"
-repository: "https://github.com/gitsunmin/dot_controller.git"
+description: 'You can run a function by simply moving Dot. You can also change the color and icon of Dot.'
+version: 0.0.3
+homepage: 'https://gitsunmin.github.io/'
+repository: 'https://github.com/gitsunmin/dot_controller.git'
 
 environment:
   sdk: '>=3.2.3 <4.0.0'
-  flutter: ">=1.17.0"
+  flutter: '>=1.17.0'
 
 dependencies:
   flutter:
